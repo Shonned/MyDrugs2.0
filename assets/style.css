@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "SFPro-Regular";
+    src: url("fonts/SFProRegular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SFPro-Semibold";
+    src: url("fonts/SFProSemibold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SFPro-Ultralight";
+    src: url("fonts/SFProUltralight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SFPro-Light";
+    src: url("fonts/SFProLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SFPro-Bold";
+    src: url("fonts/SFProBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SFPro-Heavy";
+    src: url("fonts/SFProHeavy.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121922;
+    font-family: "SFPro-Regular";
+    color: white;
+}
+
+.myDrugsNav {
+    font-family: "SFPro-Regular";
+    background: #12171E;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+.myDrugsNavItem {
+    cursor: pointer;
+}
+
+.myDrugsNav .myDrugsLoginBtn {
+    font-family: "SFPro-Semibold";
+    padding: 3px 15px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.myDrugsMain {
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 60px;
+}
+
+.myDrugsTitleBar {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.myDrugsTBWB {
+    color: rgba(255, 255, 255, .7);
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.myDrugsTBText {
+    margin-right: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.myDrugsTBBtn {
+    padding: 4px 11px;
+    background: #79B4C9;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.myDrugsHome {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.myDrugsHome h3 {
+    color: rgba(255, 255, 255, .7);
+    padding-bottom: 5px;
+}
+
+.myDrugsHomeH1 {
+    font-family: "SFPro-Heavy";
+    font-size: 40px;
+    letter-spacing: -3px;
+}
+
+.myDrugsHomeP {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, .7);
+    font-size: 13px;
+}
+
+.myDrugsHome img {
+    margin-top: 15px;
+    width: 500px;
+}
