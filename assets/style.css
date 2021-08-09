@@ -51,6 +51,12 @@ body {
     cursor: pointer;
 }
 
+.myDrugsNav a, .myDrugsNav i {
+    color: white;
+    text-decoration: none;
+}
+
+
 .myDrugsNavItem img {
     width: 40px;
     height: 32px;
@@ -129,4 +135,51 @@ body {
 .myDrugsHome img {
     margin-top: 15px;
     width: 500px;
+}
+
+.myDrugsMainInDev {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imgBg {
+    position: relative;
+    width: 500px;
+    margin: -20px auto 0 auto;
+}
+
+.pre_imgBg {
+    opacity: .8;
+}
+
+._imgBg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px !important;
+    height: 300px;
+    opacity: .7;
+}
+
+
+.myDrugsNew {
+    background: #12171E;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.myDrugsNew h3 {
+    text-align: center;
+    font-family: "SFPro-Bold";
+}
+
+.myDrugsNewBtn {
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    width: 140px;
 }
