@@ -8,23 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyDrugs 2.0</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="myDrugsNav">
-        <div class="myDrugsNavItem"><img src="assets/logo.png" alt="MyDrugs"></div>
-        <a href="index.html"><div class="myDrugsNavItem">Home</div></a>
-        <a href="economy.html"><div class="myDrugsNavItem">Economy</div></a>
-        <a href="premium.html"><div class="myDrugsNavItem">Premium</div></a>
-        <a href="party-packs.html"><div class="myDrugsNavItem">Party Packs</div></a>
-        <a href="safety.html"><div class="myDrugsNavItem">Safety</div></a>
-        <a href="faq.html"><div class="myDrugsNavItem">FAQ</div></a>
-        <a href="contact.html"><div class="myDrugsNavItem">Contact</div></a>
-        <div class="myDrugsNavItem"><i class='bx bx-search'></i></div>
-        <div class="myDrugsNavItem"><a href="login.html" class="myDrugsLoginBtn">Login</a></div>
+    <div class="myDrugsNav" id="myDrugsNav">
+        <div class="myDrugsNavLogo"><img src="assets/logo.png" alt="MyDrugs"></div>
+        <a href="index.html" class="myDrugsNavItem">Home</a>
+        <a href="economy.html" class="myDrugsNavItem">Economy</a>
+        <a href="premium.html" class="myDrugsNavItem">Premium</a>
+        <a href="party-packs.html" class="myDrugsNavItem">Party Packs</a>
+        <a href="safety.html" class="myDrugsNavItem">Safety</a>
+        <a href="faq.html" class="myDrugsNavItem">FAQ</a>
+        <a href="contact.html" class="myDrugsNavItem">Contact</a>
+        <a href="" class="myDrugsNavItem"><i class='bx bx-search myDrugsNavItem'></i></a>
+        <a href="login.html" class="myDrugsLoginBtn myDrugsNavItem">Login</a>
+        <a href="javascript:void(0);" class="hambIcon"><i class='bx bx-menu'></i></a>
+    </div>
+    <div class="MyDrugsRespMenu">
+        <ul>
+            <a href="index.html" class="myDrugsNavItem">Home</a>
+            <a href="economy.html" class="myDrugsNavItem">Economy</a>
+            <a href="premium.html" class="myDrugsNavItem">Premium</a>
+            <a href="party-packs.html" class="myDrugsNavItem">Party Packs</a>
+            <a href="safety.html" class="myDrugsNavItem">Safety</a>
+            <a href="faq.html" class="myDrugsNavItem">FAQ</a>
+            <a href="contact.html" class="myDrugsNavItem">Contact</a>
+            <a href="" class="myDrugsNavItem"><i class='bx bx-search myDrugsNavItem'></i></a>
+            <a href="login.html" class="myDrugsLoginBtn myDrugsNavItem">Login</a>
+         </ul>
     </div>
     <div class="myDrugsMain">
         <h1 class="myDrugsMainInDev">Soon.</h1>
     </div>
+    <script>
+        const hamburger = document.querySelector(".hambIcon");
+        const navMenu = document.querySelector(".MyDrugsRespMenu");
+        hamburger.addEventListener("click", respMenu);
+        function respMenu() {
+          hamburger.classList.toggle("responsive");
+          navMenu.classList.toggle("responsive");
+        }
+    </script>
 </body>
 </html>
