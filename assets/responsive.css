@@ -77,9 +77,9 @@
     display: none;
     width: 100%;
     position: absolute;
-    top: 11%;
+    top: 14%;
     left: 50%;
-    transform: translate(-50%, -11%);
+    transform: translate(-50%, -14%);
     padding: 2em;
     background: #12171E;
     border: 1px solid white;
