@@ -1,0 +1,107 @@
+
+.hambIcon {
+    display: none;
+}
+
+@media screen and (max-width: 1060px) {
+    .myDrugsNavItem {
+        display: none;
+    }
+    .myDrugsNav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .myDrugsNavLogo {
+        margin-right: 200px;
+    }
+    .hambIcon {
+        display: block;
+    }
+    .myDrugsTitleBar {
+        display: none;
+    }
+    .imgBg {
+        width: 200px;
+    }
+    .pre_imgBg {
+        width: 200px !important;
+    }
+    ._imgBg {
+        width: 75px !important;
+        height: 75px !important;
+    }
+    .myDrugsHomeH1 {
+        font-size: 30px;
+    }
+    .myDrugsMain {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .myDrugsFaq {
+        margin-right: 75px;
+        margin-left: 75px;
+    }
+    .myDrugsFaqQuestion {
+        font-size: 22px;
+    }
+    .myDrugsFaqResponse {
+        font-size: 17px;
+    }
+    .myDrugsSafety {
+        margin-right: 75px;
+        margin-left: 75px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .myDrugsMain {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .myDrugsFaq {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .myDrugsFaqQuestion {
+        font-size: 18px;
+    }
+    .myDrugsFaqResponse {
+        font-size: 14px;
+    }
+    .myDrugsSafety {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+.responsive {display: block !important;}
+.MyDrugsRespMenu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -11%);
+    padding: 2em;
+    background: #12171E;
+    border: 1px solid white;
+    z-index: 999;
+}
+ul .myDrugsNavItem {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+}
+ul .myDrugsLoginBtn {
+    font-family: "SFPro-Semibold";
+    padding: 3px 15px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 70px;
+    margin: auto;
+}

@@ -51,13 +51,19 @@ body {
     cursor: pointer;
 }
 
-.myDrugsNav a, .myDrugsNav i {
+.myDrugsNav a  {
+    color: white;
+    text-decoration: none;
+}
+
+.myDrugsNav i {
+    font-size: 25px;
     color: white;
     text-decoration: none;
 }
 
 
-.myDrugsNavItem img {
+.myDrugsNavLogo img {
     width: 40px;
     height: 32px;
 }
@@ -182,4 +188,57 @@ body {
     margin: 30px auto;
     display: block;
     width: 140px;
+}
+
+/* FAQ */
+.myDrugsFaq {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 60px;
+}
+
+.myDrugsFaqQuestion {
+    word-break: break-all;
+}
+
+.myDrugsFaqResponse {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, .7);
+    word-break: break-all;
+}
+
+/* SAFETY */
+.myDrugsSafety {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 60px;
+}
+
+.myDrugsSafety1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    word-break: break-all;
+}
+
+.myDrugsSafety2 {
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, .7);
+    word-break: break-all;
+}
+
+.myDrugsSafety3 {
+    padding-bottom: 15px;
+    color: white;
+    word-break: break-all;
+}
+
+.myDrugsSafety4 {
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, .7);
+    font-style: italic;
+    word-break: break-all;
 }
