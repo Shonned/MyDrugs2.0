@@ -1,5 +1,10 @@
 # MyDrugs 2.0 Release Notes
 
+## [v1.3](https://github.com/Shonned/MyDrugs2.0)
+
+* Added Shop
+* Fixed bugs
+
 ## [v1.2](https://github.com/Shonned/MyDrugs2.0)
 
 * Added Responsive for Mobile
