@@ -60,12 +60,16 @@ body {
     text-decoration: none;
 }
 
-.myDrugsNav i {
-    font-size: 25px;
+.bx-search {
     color: white;
     text-decoration: none;
 }
 
+.bx-menu {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
 
 .myDrugsNavLogo img {
     width: 40px;
