@@ -38,9 +38,69 @@
             <a href="login.html" class="myDrugsLoginBtn myDrugsNavItem">Login</a>
          </ul>
     </div>
-    <div class="myDrugsMain">
-        <h1 class="myDrugsMainInDev">Soon.</h1>
+    <div class="myDrugsShop" id="shop">
+        <h1 class="myDrugsShopTitle">myDrugs Shop / <a href="#cart" class="ShoppingCart"><i class='bx bx-shopping-bag'></i> {{shoppingCart }}</a></h1>
+        <div class="myDrugsShopRow">
+            <div v-for="item in items" :key="item.name" class="myDrugsShopItem">
+                <img class="mDSIImg" :src="item.image.source" :alt="item.image.alt">
+                <h4 class="mDSIName">{{ item.name }}</h4>
+                <p v-if="item.inStock" class="mDSIStock">IN STOCK</p>
+                <div class="mDSIQuantity">
+                    <div class="mDSIQuantityNb">
+                        <span>-</span>
+                    </div>
+                    <div class="mDSIQuantity_NB">
+                        <span>{{ item.quantity }}</span>
+                    </div>
+                    <button class="mDSIQuantityNb">
+                        <span>+</span>
+                    </button>
+                </div>
+                <small style="display: flex; justify-content: center;">⬆️  don't work now !  ⬆️</small>
+                <div v-if="item.name == '#100'">
+                    <button @click="addQuantityDrugs1()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'BLUE CLOVER'">
+                    <button @click="addQuantityDrugs2()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'GREEN SNOWFLAKE'">
+                    <button @click="addQuantityDrugs3()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'BIG BOOMER'">
+                    <button @click="addQuantityDrugs4()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'SMILING DEVIL'">
+                    <button @click="addQuantityDrugs5()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'PURPLE FLOWER'">
+                    <button @click="addQuantityDrugs6()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'RED PILL'">
+                    <button @click="addQuantityDrugs7()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <div v-if="item.name == 'CONFUSED'">
+                    <button @click="addQuantityDrugs8()" class="mDSIATCBtn">Add to cart</button>
+                </div>
+                <button class="mDSICBtn">Check Out</button>
+            </div>
+        </div>
+        <div id="cart" class="cart">
+            <div>
+              <a href="#" title="Close" class="modal-close">Close</a>
+              <h1><i class='bx bx-shopping-bag'></i> Shopping Cart ({{ shoppingCart }})</h1>
+              <p v-if="quantityDrugs1 >= 1">#100 : {{ quantityDrugs1 }}</p>
+              <p v-if="quantityDrugs2 >= 1">BLUE CLOVER : {{ quantityDrugs2 }}</p>
+              <p v-if="quantityDrugs3 >= 1">GREEN SNOWFLAKE : {{ quantityDrugs3 }}</p>
+              <p v-if="quantityDrugs4 >= 1">BIG BOOMER : {{ quantityDrugs4 }}</p>
+              <p v-if="quantityDrugs5 >= 1">SMILING DEVIL : {{ quantityDrugs5 }}</p>
+              <p v-if="quantityDrugs6 >= 1">PURPLE FLOWER : {{ quantityDrugs6 }}</p>
+              <p v-if="quantityDrugs7 >= 1">RED PILL : {{ quantityDrugs7 }}</p>
+              <p v-if="quantityDrugs8 >= 1">CONFUSED : {{ quantityDrugs8 }}</p>
+              <a href="https://github.com/Shonned/MyDrugs2.0" target="_blank" class="mDSICBtn cBtn">Check Out</a>
+            </div>
+        </div>
     </div>
+
     <script>
         const hamburger = document.querySelector(".hambIcon");
         const navMenu = document.querySelector(".MyDrugsRespMenu");
@@ -50,5 +110,7 @@
           navMenu.classList.toggle("responsive");
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="assets/shop.js"></script>
 </body>
 </html>
