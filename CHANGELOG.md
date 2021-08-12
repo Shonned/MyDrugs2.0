@@ -1,5 +1,11 @@
 # MyDrugs 2.0 Release Notes
 
+## [v1.3.2](https://github.com/Shonned/MyDrugs2.0)
+
+* Fixed Shopping Cart Modal for phones
+* Fixed Letters Spaces for phones
+* Now the Logo redirect to the homepage
+
 ## [v1.3.1](https://github.com/Shonned/MyDrugs2.0)
 
 * The "Check Out" button is now clickable
