@@ -137,7 +137,7 @@ body {
 .myDrugsHomeH1 {
     font-family: "SFPro-Heavy";
     font-size: 40px;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
 
 .myDrugsHomeP {
@@ -388,7 +388,7 @@ a {
 }
 
 .cart > div {
-    width: 400px;
+    width: 330px;
     position: absolute;
     top: 50%;
     left: 50%;
