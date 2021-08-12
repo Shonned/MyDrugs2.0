@@ -1,5 +1,9 @@
 # MyDrugs 2.0 Release Notes
 
+## [v1.3.1](https://github.com/Shonned/MyDrugs2.0)
+
+* The "Check Out" button is now clickable
+
 ## [v1.3](https://github.com/Shonned/MyDrugs2.0)
 
 * Added Shop
